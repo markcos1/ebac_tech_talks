@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
             <p class="hero__text">
-                O aniversário chega daqui a 10d 12h 20m 15s.
+                O aniversário chega daqui a <span id="contador"></span>
             </p>
             <div class="infos-bars">
                 <ul class="infos-bars__infos">
@@ -35,18 +36,41 @@
             </div>
         </div>
     </header>
-    <section class="event">
-        <div class="container">
+    <section class="event event--Confirmados">
+        <div class="container" data-aos="fade-right">
             <div class="event__details">
                 <h2 class="event__details__title">Presenças Confirmadas</h2>
                 <p class="event__details__description">
                     Até o momento, 100 pessoas confirmaram presença para a festa de aniversário. Estamos ansiosos para celebrar juntos e criar memórias inesquecíveis!
                 </p>
             </div>
-            <img class="event__image" src="./images/frontend.png" alt="confirmados">
+            <img class="event__image" src="./images/confirmados.jpg" alt="confirmados">
+        </div>
+    </section>
+    <section class="event event--djConfirmado event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">DJ Confirmado</h2>
+                <p class="event__details__description">
+                    Temos o prazer de anunciar que o DJ Alok está confirmado para animar a nossa festa de aniversário! Prepare-se para uma noite incrível de música e diversão!
+                </p>
+            </div>
+            <img class="event__image" src="./images/djfesta.jpg" alt="confirmados">
+        </div>
+    </section>
+    <section class="event event--lembrancinhas">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Lembrançinhas</h2>
+                <p class="event__details__description">
+                    Para tornar a festa ainda mais especial, preparamos lembrancinhas personalizadas para os convidados. Cada um receberá um kit exclusivo com itens temáticos para guardar como recordação desse momento inesquecível!
+                </p>
+            </div>
+            <img class="event__image" src="./images/lembrancinha.jpg" alt="confirmados">
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
